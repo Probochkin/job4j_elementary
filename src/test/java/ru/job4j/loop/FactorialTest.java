@@ -1,0 +1,21 @@
+package ru.job4j.loop;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class FactorialTest {
+    @Test
+    public void whenCalculateFactorialForFiveThenOneHundredTwenty() {
+        int in = 5;
+        int  expected = 120;
+        Assert.assertEquals(Factorial.calc(in), expected);
+        /* напишите здесь тест, проверяющий, что факториал для числа 5 равен 120. */
+    }
+
+    @Test
+    public void whenCalculateFactorialForZeroThenOne() {
+        int in = 0;
+        int  expected = 1;
+        Assert.assertEquals(Factorial.calc(in), expected);
+    }
+}
